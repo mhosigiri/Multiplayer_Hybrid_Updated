@@ -2890,12 +2890,11 @@ GameObject:
   - component: {fileID: 3459668341182409897}
   - component: {fileID: 4527409454358132411}
   - component: {fileID: 9104107200852463813}
-  - component: {fileID: 7897804177838831400}
-  - component: {fileID: 2219568308870756866}
-  - component: {fileID: 7783861168834866150}
-  - component: {fileID: 3072484068936700062}
-  - component: {fileID: 7632512195598397434}
-  - component: {fileID: 4479159623618536119}
+  - component: {fileID: 4257909988654090312}
+  - component: {fileID: 3004339369318898445}
+  - component: {fileID: 2195753013189617908}
+  - component: {fileID: 8667319984231259309}
+  - component: {fileID: 8616448184847809910}
   m_Layer: 0
   m_Name: 8Button
   m_TagString: Untagged
@@ -3032,25 +3031,7 @@ MonoBehaviour:
   m_ClampToMaxDistance: 1
   m_MaxDistance: 0.0008
   m_PokeFilter: {fileID: 4527409454358132411}
---- !u!114 &7897804177838831400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 699612188279821411}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86d9f7cde916c034aafaa5d46029ca4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.94509804, g: 1, b: 0, a: 1}
-  outlineWidth: 8
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!114 &2219568308870756866
+--- !u!114 &4257909988654090312
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3062,16 +3043,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 2567964984
+  GlobalObjectIdHash: 3492605475
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0
   SceneMigrationSynchronization: 1
   SpawnWithObservers: 1
-  DontDestroyWithOwner: 1
-  AutoObjectParentSync: 0
---- !u!114 &7783861168834866150
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!114 &3004339369318898445
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3083,16 +3064,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25f7d6f3d19b0524d9be4bc50efbc19a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseUnreliableDeltas: 0
+  UseUnreliableDeltas: 1
   SyncPositionX: 1
   SyncPositionY: 1
   SyncPositionZ: 1
-  SyncRotAngleX: 0
-  SyncRotAngleY: 0
-  SyncRotAngleZ: 0
-  SyncScaleX: 0
-  SyncScaleY: 0
-  SyncScaleZ: 0
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 1
+  SyncScaleY: 1
+  SyncScaleZ: 1
   PositionThreshold: 0.001
   RotAngleThreshold: 0.01
   ScaleThreshold: 0.01
@@ -3102,7 +3083,7 @@ MonoBehaviour:
   InLocalSpace: 0
   Interpolate: 1
   SlerpPosition: 0
---- !u!54 &3072484068936700062
+--- !u!54 &2195753013189617908
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3129,7 +3110,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7632512195598397434
+--- !u!114 &8667319984231259309
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3167,7 +3148,7 @@ MonoBehaviour:
   SelectNetworkedEventAll:
     m_PersistentCalls:
       m_Calls: []
-  m_SyncActivate: 0
+  m_SyncActivate: 1
   m_UseActivateEvents: 0
   ActivateNetworkedEventServer:
     m_PersistentCalls:
@@ -3179,7 +3160,7 @@ MonoBehaviour:
   m_AllowCollisionOwnershipExchange: 1
   m_MinExchangeVelocityMagitude: 0.025
   spawnLocked: 1
---- !u!114 &4479159623618536119
+--- !u!114 &8616448184847809910
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3203,6 +3184,8 @@ GameObject:
   - component: {fileID: 125313213088992899}
   - component: {fileID: 5846411003949850289}
   - component: {fileID: 8472729114880739098}
+  - component: {fileID: 2622724222458333807}
+  - component: {fileID: 7376266639984935424}
   m_Layer: 0
   m_Name: KeyLockable
   m_TagString: Untagged
@@ -3329,11 +3312,63 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectToMove: {fileID: 713941383777125211}
-  endPosition: {fileID: 0}
+  endPosition: {fileID: 8225140367019800696}
   MovementSpeed: 1
   OnMoveComplete:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2622724222458333807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713941383777125211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 1830987946
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 1
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 1
+  AutoObjectParentSync: 1
+--- !u!114 &7376266639984935424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713941383777125211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25f7d6f3d19b0524d9be4bc50efbc19a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseUnreliableDeltas: 0
+  SyncPositionX: 1
+  SyncPositionY: 1
+  SyncPositionZ: 1
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 1
+  SyncScaleY: 1
+  SyncScaleZ: 1
+  PositionThreshold: 0.001
+  RotAngleThreshold: 0.01
+  ScaleThreshold: 0.01
+  UseQuaternionSynchronization: 0
+  UseQuaternionCompression: 0
+  UseHalfFloatPrecision: 0
+  InLocalSpace: 0
+  Interpolate: 1
+  SlerpPosition: 0
 --- !u!1 &728419614731479410
 GameObject:
   m_ObjectHideFlags: 0
@@ -4294,12 +4329,11 @@ GameObject:
   - component: {fileID: 8693926715844230478}
   - component: {fileID: 3328417521658167993}
   - component: {fileID: 3078978781130421495}
-  - component: {fileID: 4717304879166485398}
-  - component: {fileID: 8864508503005063243}
-  - component: {fileID: 3344002945824412467}
-  - component: {fileID: 270439075086098110}
-  - component: {fileID: 4474801211423133720}
-  - component: {fileID: 2707340456099347304}
+  - component: {fileID: 4318151503317151138}
+  - component: {fileID: 5368226637479351249}
+  - component: {fileID: 1927443059914566920}
+  - component: {fileID: 763647958603841244}
+  - component: {fileID: 6767374746661988962}
   m_Layer: 0
   m_Name: EnterButton
   m_TagString: Untagged
@@ -4436,25 +4470,7 @@ MonoBehaviour:
   m_ClampToMaxDistance: 1
   m_MaxDistance: 0.0008
   m_PokeFilter: {fileID: 3328417521658167993}
---- !u!114 &4717304879166485398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1012977018650976299}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86d9f7cde916c034aafaa5d46029ca4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.94509804, g: 1, b: 0, a: 1}
-  outlineWidth: 8
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!114 &8864508503005063243
+--- !u!114 &4318151503317151138
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4466,16 +4482,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 3334687238
+  GlobalObjectIdHash: 477616224
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0
   SceneMigrationSynchronization: 1
   SpawnWithObservers: 1
-  DontDestroyWithOwner: 1
-  AutoObjectParentSync: 0
---- !u!114 &3344002945824412467
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!114 &5368226637479351249
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4487,16 +4503,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25f7d6f3d19b0524d9be4bc50efbc19a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseUnreliableDeltas: 0
+  UseUnreliableDeltas: 1
   SyncPositionX: 1
   SyncPositionY: 1
   SyncPositionZ: 1
-  SyncRotAngleX: 0
-  SyncRotAngleY: 0
-  SyncRotAngleZ: 0
-  SyncScaleX: 0
-  SyncScaleY: 0
-  SyncScaleZ: 0
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 1
+  SyncScaleY: 1
+  SyncScaleZ: 1
   PositionThreshold: 0.001
   RotAngleThreshold: 0.01
   ScaleThreshold: 0.01
@@ -4506,7 +4522,7 @@ MonoBehaviour:
   InLocalSpace: 0
   Interpolate: 1
   SlerpPosition: 0
---- !u!54 &270439075086098110
+--- !u!54 &1927443059914566920
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4533,7 +4549,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &4474801211423133720
+--- !u!114 &763647958603841244
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4571,7 +4587,7 @@ MonoBehaviour:
   SelectNetworkedEventAll:
     m_PersistentCalls:
       m_Calls: []
-  m_SyncActivate: 0
+  m_SyncActivate: 1
   m_UseActivateEvents: 0
   ActivateNetworkedEventServer:
     m_PersistentCalls:
@@ -4583,7 +4599,7 @@ MonoBehaviour:
   m_AllowCollisionOwnershipExchange: 1
   m_MinExchangeVelocityMagitude: 0.025
   spawnLocked: 1
---- !u!114 &2707340456099347304
+--- !u!114 &6767374746661988962
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5174,7 +5190,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1184131672899995480}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: -2.6961, y: -0.053900003, z: 3.983}
   m_LocalScale: {x: 0.9392419, y: 0.9392419, z: 0.9392419}
   m_ConstrainProportionsScale: 1
@@ -5529,16 +5545,15 @@ GameObject:
   - component: {fileID: 8339705202257348611}
   - component: {fileID: 6810891361666132614}
   - component: {fileID: 64436662430886402}
-  - component: {fileID: 7055500913034415315}
   - component: {fileID: 5114214103277682694}
-  - component: {fileID: 4870640167694539544}
+  - component: {fileID: 2343824203083412061}
+  - component: {fileID: 7055500913034415315}
   - component: {fileID: 5543511003195719817}
-  - component: {fileID: 392858043763727266}
   - component: {fileID: 5092971164373211855}
   - component: {fileID: 1627293979825092598}
-  - component: {fileID: 2307089698057875847}
-  - component: {fileID: 5620743403686739171}
-  - component: {fileID: 7466197637922180387}
+  - component: {fileID: 5299289559044575591}
+  - component: {fileID: 7432438744422512651}
+  - component: {fileID: 6335683017323872081}
   m_Layer: 0
   m_Name: LeftDoor
   m_TagString: Untagged
@@ -5616,6 +5631,55 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5114214103277682694
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287453403881882167}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8207596153253470522, guid: 2331cd5a84a6efc4a981310dc321519a, type: 3}
+--- !u!54 &2343824203083412061
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287453403881882167}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!114 &7055500913034415315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5688,43 +5752,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
---- !u!64 &5114214103277682694
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1287453403881882167}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8207596153253470522, guid: 2331cd5a84a6efc4a981310dc321519a, type: 3}
---- !u!114 &4870640167694539544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1287453403881882167}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 151a10f7ed87d4a4996a3b226e023024, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectToFlash: {fileID: 0}
-  FlashSpeed: 0.6
-  m_StartMaterial: {fileID: 0}
 --- !u!114 &5543511003195719817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5739,36 +5766,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectToMove: {fileID: 1287453403881882167}
   endPosition: {fileID: 7329693678534203698}
-  MovementSpeed: 1
+  MovementSpeed: 0.5
   OnMoveComplete:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &392858043763727266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1287453403881882167}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9981709ae24fdf4fbfe39a242328bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  idSource: 0
-  CustomId: d1b9e514-19e1-4f3c-96f9-e6a85d9922f6
-  UpdateRate: 0.1
-  MeshName: leftdoor
-  PositionThreshold: 0.01
-  RotationThreshold: 0.1
-  ScaleThreshold: 0.1
-  inputType: 0
-  IsController: 0
-  IsRight: 0
-  IdentifyControllerAtRuntime: 1
-  FallbackControllerType: 0
-  IdPool: {fileID: 0}
-  SyncWithPlayerGazeTick: 0
 --- !u!114 &5092971164373211855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5802,16 +5803,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25f7d6f3d19b0524d9be4bc50efbc19a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseUnreliableDeltas: 0
+  UseUnreliableDeltas: 1
   SyncPositionX: 1
   SyncPositionY: 1
   SyncPositionZ: 1
   SyncRotAngleX: 1
   SyncRotAngleY: 1
   SyncRotAngleZ: 1
-  SyncScaleX: 0
-  SyncScaleY: 0
-  SyncScaleZ: 0
+  SyncScaleX: 1
+  SyncScaleY: 1
+  SyncScaleZ: 1
   PositionThreshold: 0.001
   RotAngleThreshold: 0.01
   ScaleThreshold: 0.01
@@ -5821,34 +5822,22 @@ MonoBehaviour:
   InLocalSpace: 0
   Interpolate: 1
   SlerpPosition: 0
---- !u!54 &2307089698057875847
-Rigidbody:
+--- !u!114 &5299289559044575591
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1287453403881882167}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &5620743403686739171
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 151a10f7ed87d4a4996a3b226e023024, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectToFlash: {fileID: 1287453403881882167}
+  FlashSpeed: 0.6
+  m_StartMaterial: {fileID: 0}
+--- !u!114 &7432438744422512651
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5886,7 +5875,7 @@ MonoBehaviour:
   SelectNetworkedEventAll:
     m_PersistentCalls:
       m_Calls: []
-  m_SyncActivate: 0
+  m_SyncActivate: 1
   m_UseActivateEvents: 0
   ActivateNetworkedEventServer:
     m_PersistentCalls:
@@ -5898,7 +5887,7 @@ MonoBehaviour:
   m_AllowCollisionOwnershipExchange: 1
   m_MinExchangeVelocityMagitude: 0.025
   spawnLocked: 1
---- !u!114 &7466197637922180387
+--- !u!114 &6335683017323872081
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6623,8 +6612,6 @@ GameObject:
   - component: {fileID: 1861913473555738853}
   - component: {fileID: 7004809382525815114}
   - component: {fileID: 1980461211302675432}
-  - component: {fileID: 6804219081670520746}
-  - component: {fileID: 2591643046887286667}
   m_Layer: 0
   m_Name: Hopper1
   m_TagString: Untagged
@@ -6659,7 +6646,7 @@ Animator:
   m_GameObject: {fileID: 1530251475105852884}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 522d7830b72bd2c4187182ed541e8b32, type: 3}
-  m_Controller: {fileID: 9100000, guid: 837e5ea2e94c75c4682772e35e25c900, type: 2}
+  m_Controller: {fileID: 9100000, guid: d739e8d7342a2064197ae6589748d2c9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -6833,47 +6820,6 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
---- !u!114 &6804219081670520746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1530251475105852884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9981709ae24fdf4fbfe39a242328bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  idSource: 0
-  CustomId: 64772a18-8901-4a32-ac3c-c1dc213a20fc
-  UpdateRate: 0.1
-  MeshName: hopper1
-  PositionThreshold: 0.01
-  RotationThreshold: 0.1
-  ScaleThreshold: 0.1
-  inputType: 0
-  IsController: 0
-  IsRight: 0
-  IdentifyControllerAtRuntime: 1
-  FallbackControllerType: 0
-  IdPool: {fileID: 0}
-  SyncWithPlayerGazeTick: 0
---- !u!114 &2591643046887286667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1530251475105852884}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 151a10f7ed87d4a4996a3b226e023024, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectToFlash: {fileID: 1530251475105852884}
-  FlashSpeed: 0.6
-  m_StartMaterial: {fileID: 0}
 --- !u!1 &1550376680800198219
 GameObject:
   m_ObjectHideFlags: 0
@@ -8948,7 +8894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 0
+  GlobalObjectIdHash: 1621060776
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
@@ -11705,16 +11651,15 @@ GameObject:
   - component: {fileID: 3028322772971336166}
   - component: {fileID: 8775995964894789629}
   - component: {fileID: 2978638712703710573}
-  - component: {fileID: 2109750147018141078}
   - component: {fileID: 3932820384324411887}
-  - component: {fileID: 5964571507636980092}
+  - component: {fileID: 2345615180242322023}
+  - component: {fileID: 2109750147018141078}
   - component: {fileID: 3019636843225081471}
-  - component: {fileID: 3380649303855043497}
   - component: {fileID: 3016565692549507610}
   - component: {fileID: 4447243736576918939}
-  - component: {fileID: 2345615180242322023}
   - component: {fileID: 7899697477473592}
   - component: {fileID: 461133991006351483}
+  - component: {fileID: 6230473906959873317}
   m_Layer: 0
   m_Name: RightDoor
   m_TagString: Untagged
@@ -11789,6 +11734,55 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3932820384324411887
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2834528755146891262}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8548895912561745204, guid: 2331cd5a84a6efc4a981310dc321519a, type: 3}
+--- !u!54 &2345615180242322023
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2834528755146891262}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!114 &2109750147018141078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11861,43 +11855,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
---- !u!64 &3932820384324411887
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2834528755146891262}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8548895912561745204, guid: 2331cd5a84a6efc4a981310dc321519a, type: 3}
---- !u!114 &5964571507636980092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2834528755146891262}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 151a10f7ed87d4a4996a3b226e023024, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectToFlash: {fileID: 0}
-  FlashSpeed: 0.6
-  m_StartMaterial: {fileID: 0}
 --- !u!114 &3019636843225081471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11912,36 +11869,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectToMove: {fileID: 2834528755146891262}
   endPosition: {fileID: 6823032424009448940}
-  MovementSpeed: 1
+  MovementSpeed: 0.5
   OnMoveComplete:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &3380649303855043497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2834528755146891262}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9981709ae24fdf4fbfe39a242328bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  idSource: 0
-  CustomId: 1657bc76-06f5-402a-a237-af6071a72bca
-  UpdateRate: 0.1
-  MeshName: rightdoor
-  PositionThreshold: 0.01
-  RotationThreshold: 0.1
-  ScaleThreshold: 0.1
-  inputType: 0
-  IsController: 0
-  IsRight: 0
-  IdentifyControllerAtRuntime: 1
-  FallbackControllerType: 0
-  IdPool: {fileID: 0}
-  SyncWithPlayerGazeTick: 0
 --- !u!114 &3016565692549507610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11975,16 +11906,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25f7d6f3d19b0524d9be4bc50efbc19a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseUnreliableDeltas: 0
+  UseUnreliableDeltas: 1
   SyncPositionX: 1
   SyncPositionY: 1
   SyncPositionZ: 1
   SyncRotAngleX: 1
   SyncRotAngleY: 1
   SyncRotAngleZ: 1
-  SyncScaleX: 0
-  SyncScaleY: 0
-  SyncScaleZ: 0
+  SyncScaleX: 1
+  SyncScaleY: 1
+  SyncScaleZ: 1
   PositionThreshold: 0.001
   RotAngleThreshold: 0.01
   ScaleThreshold: 0.01
@@ -11994,33 +11925,6 @@ MonoBehaviour:
   InLocalSpace: 0
   Interpolate: 1
   SlerpPosition: 0
---- !u!54 &2345615180242322023
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2834528755146891262}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &7899697477473592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12059,7 +11963,7 @@ MonoBehaviour:
   SelectNetworkedEventAll:
     m_PersistentCalls:
       m_Calls: []
-  m_SyncActivate: 0
+  m_SyncActivate: 1
   m_UseActivateEvents: 0
   ActivateNetworkedEventServer:
     m_PersistentCalls:
@@ -12083,6 +11987,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c0be61502bb534f922ebb746851216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6230473906959873317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2834528755146891262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 151a10f7ed87d4a4996a3b226e023024, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectToFlash: {fileID: 2834528755146891262}
+  FlashSpeed: 0.6
+  m_StartMaterial: {fileID: 0}
 --- !u!1 &2901269286014830312
 GameObject:
   m_ObjectHideFlags: 0
@@ -13308,6 +13227,8 @@ GameObject:
   - component: {fileID: 7329693678534203698}
   - component: {fileID: 7133853967261397779}
   - component: {fileID: 5319727021930208011}
+  - component: {fileID: 503402443124584728}
+  - component: {fileID: 5895150265276879381}
   m_Layer: 0
   m_Name: LeftDoorOpen
   m_TagString: Untagged
@@ -13382,6 +13303,58 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &503402443124584728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2997126383394558025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 1996721039
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 1
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!114 &5895150265276879381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2997126383394558025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25f7d6f3d19b0524d9be4bc50efbc19a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseUnreliableDeltas: 1
+  SyncPositionX: 1
+  SyncPositionY: 1
+  SyncPositionZ: 1
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 1
+  SyncScaleY: 1
+  SyncScaleZ: 1
+  PositionThreshold: 0.001
+  RotAngleThreshold: 0.01
+  ScaleThreshold: 0.01
+  UseQuaternionSynchronization: 1
+  UseQuaternionCompression: 1
+  UseHalfFloatPrecision: 0
+  InLocalSpace: 0
+  Interpolate: 1
+  SlerpPosition: 0
 --- !u!1 &3010392325927013016
 GameObject:
   m_ObjectHideFlags: 0
@@ -17045,6 +17018,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Screens:
   - {fileID: 21300000, guid: f8c9aa1a0c43a4b4ea0699054d7fd0e4, type: 3}
+  - {fileID: 21300000, guid: 863f45e2270f303499bcf53d50b0a52b, type: 3}
+  - {fileID: 21300000, guid: 0ae14f040cf401f4195aebf945f14420, type: 3}
+  - {fileID: 21300000, guid: b94c8f749ec5a2b498a58ba35647c6f7, type: 3}
+  - {fileID: 21300000, guid: 67fb57c7842f9464288769a6ee95b32d, type: 3}
+  - {fileID: 21300000, guid: 4cd18640bc0b1764d902064a499e49af, type: 3}
+  - {fileID: 21300000, guid: 88678a947a3bb1a478d6cd25bc5f6a77, type: 3}
+  - {fileID: 21300000, guid: a43b34a06faab3549b65f33c38f329f5, type: 3}
+  - {fileID: 21300000, guid: b001ff5e11703834ea7b5ca230f98d92, type: 3}
+  - {fileID: 21300000, guid: 18e3d32e39262e94781cc3490490cd43, type: 3}
+  - {fileID: 21300000, guid: 9fbbae2384d482b4fb45f12c5713ca0c, type: 3}
+  - {fileID: 21300000, guid: 42aa4c3084a6d8e4b8fc567a5ae034d3, type: 3}
+  - {fileID: 21300000, guid: 6f181f43f59691e4aa1f3b1606399dab, type: 3}
+  - {fileID: 21300000, guid: 241a45f31b9db894589f1e1f8ca28ba6, type: 3}
+  - {fileID: 21300000, guid: 6089a560e4d77ec40a07c675bbc7b8fa, type: 3}
+  - {fileID: 21300000, guid: 8fa306fa0bdcef0479cf8715d2e9eec6, type: 3}
   OnAllDelayedScreensChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -18015,7 +18003,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &992041294455117529
 Transform:
@@ -18069,7 +18057,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
+  m_ReceiveGI: 2
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -18095,12 +18083,11 @@ GameObject:
   - component: {fileID: 9188942821139871694}
   - component: {fileID: 2231836566942588907}
   - component: {fileID: 4320702297253241839}
-  - component: {fileID: 3588605615933796446}
-  - component: {fileID: 4908640749563809275}
-  - component: {fileID: 6188722422978681975}
-  - component: {fileID: 597936620434112248}
-  - component: {fileID: 7077247314561976737}
-  - component: {fileID: 5720337886001395503}
+  - component: {fileID: 3187387793995249696}
+  - component: {fileID: 7432673035169128915}
+  - component: {fileID: 3146849660913137653}
+  - component: {fileID: 6844501226491510895}
+  - component: {fileID: 8666871632783056822}
   m_Layer: 0
   m_Name: PowerUpButton
   m_TagString: Untagged
@@ -18237,25 +18224,7 @@ MonoBehaviour:
   m_ClampToMaxDistance: 1
   m_MaxDistance: 0.0058
   m_PokeFilter: {fileID: 2231836566942588907}
---- !u!114 &3588605615933796446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4370752196899679676}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86d9f7cde916c034aafaa5d46029ca4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.94509804, g: 1, b: 0, a: 1}
-  outlineWidth: 8
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!114 &4908640749563809275
+--- !u!114 &3187387793995249696
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -18267,16 +18236,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 3974606099
+  GlobalObjectIdHash: 3851554142
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0
   SceneMigrationSynchronization: 1
   SpawnWithObservers: 1
-  DontDestroyWithOwner: 1
-  AutoObjectParentSync: 0
---- !u!114 &6188722422978681975
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!114 &7432673035169128915
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -18288,16 +18257,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25f7d6f3d19b0524d9be4bc50efbc19a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseUnreliableDeltas: 0
+  UseUnreliableDeltas: 1
   SyncPositionX: 1
   SyncPositionY: 1
   SyncPositionZ: 1
-  SyncRotAngleX: 0
-  SyncRotAngleY: 0
-  SyncRotAngleZ: 0
-  SyncScaleX: 0
-  SyncScaleY: 0
-  SyncScaleZ: 0
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 1
+  SyncScaleY: 1
+  SyncScaleZ: 1
   PositionThreshold: 0.001
   RotAngleThreshold: 0.01
   ScaleThreshold: 0.01
@@ -18307,7 +18276,7 @@ MonoBehaviour:
   InLocalSpace: 0
   Interpolate: 1
   SlerpPosition: 0
---- !u!54 &597936620434112248
+--- !u!54 &3146849660913137653
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -18334,7 +18303,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7077247314561976737
+--- !u!114 &6844501226491510895
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -18372,7 +18341,7 @@ MonoBehaviour:
   SelectNetworkedEventAll:
     m_PersistentCalls:
       m_Calls: []
-  m_SyncActivate: 0
+  m_SyncActivate: 1
   m_UseActivateEvents: 0
   ActivateNetworkedEventServer:
     m_PersistentCalls:
@@ -18384,7 +18353,7 @@ MonoBehaviour:
   m_AllowCollisionOwnershipExchange: 1
   m_MinExchangeVelocityMagitude: 0.025
   spawnLocked: 1
---- !u!114 &5720337886001395503
+--- !u!114 &8666871632783056822
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -22497,9 +22466,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5622416339410533984}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0.000000059604645, z: 0.7071068, w: -0.000000029802322}
-  m_LocalPosition: {x: 2.3242257, y: 0.82026047, z: 2.2591429}
-  m_LocalScale: {x: 1.0533292, y: 1.5522754, z: 1.0533297}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5636256704942610030}
@@ -22775,12 +22744,11 @@ GameObject:
   - component: {fileID: 206208123006430043}
   - component: {fileID: 2429178922381451907}
   - component: {fileID: 7645633554488066782}
-  - component: {fileID: 3665234165745407599}
-  - component: {fileID: 8172876346462245994}
-  - component: {fileID: 5679947729463728255}
-  - component: {fileID: 7991945272556944033}
-  - component: {fileID: 3810170821889347908}
-  - component: {fileID: 680844053449400690}
+  - component: {fileID: 5388960208718319225}
+  - component: {fileID: 908031120749599289}
+  - component: {fileID: 5546554772517515469}
+  - component: {fileID: 8986436481112471459}
+  - component: {fileID: 846575703986670780}
   m_Layer: 0
   m_Name: ProgramButton
   m_TagString: Untagged
@@ -22917,25 +22885,7 @@ MonoBehaviour:
   m_ClampToMaxDistance: 1
   m_MaxDistance: 0.0008
   m_PokeFilter: {fileID: 2429178922381451907}
---- !u!114 &3665234165745407599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5626897078864368726}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86d9f7cde916c034aafaa5d46029ca4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.94509804, g: 1, b: 0, a: 1}
-  outlineWidth: 8
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!114 &8172876346462245994
+--- !u!114 &5388960208718319225
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -22947,16 +22897,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 1824522652
+  GlobalObjectIdHash: 3357999530
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0
   SceneMigrationSynchronization: 1
   SpawnWithObservers: 1
-  DontDestroyWithOwner: 1
-  AutoObjectParentSync: 0
---- !u!114 &5679947729463728255
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!114 &908031120749599289
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -22968,16 +22918,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25f7d6f3d19b0524d9be4bc50efbc19a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseUnreliableDeltas: 0
+  UseUnreliableDeltas: 1
   SyncPositionX: 1
   SyncPositionY: 1
   SyncPositionZ: 1
-  SyncRotAngleX: 0
-  SyncRotAngleY: 0
-  SyncRotAngleZ: 0
-  SyncScaleX: 0
-  SyncScaleY: 0
-  SyncScaleZ: 0
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 1
+  SyncScaleY: 1
+  SyncScaleZ: 1
   PositionThreshold: 0.001
   RotAngleThreshold: 0.01
   ScaleThreshold: 0.01
@@ -22987,7 +22937,7 @@ MonoBehaviour:
   InLocalSpace: 0
   Interpolate: 1
   SlerpPosition: 0
---- !u!54 &7991945272556944033
+--- !u!54 &5546554772517515469
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -23014,7 +22964,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3810170821889347908
+--- !u!114 &8986436481112471459
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -23052,7 +23002,7 @@ MonoBehaviour:
   SelectNetworkedEventAll:
     m_PersistentCalls:
       m_Calls: []
-  m_SyncActivate: 0
+  m_SyncActivate: 1
   m_UseActivateEvents: 0
   ActivateNetworkedEventServer:
     m_PersistentCalls:
@@ -23064,7 +23014,7 @@ MonoBehaviour:
   m_AllowCollisionOwnershipExchange: 1
   m_MinExchangeVelocityMagitude: 0.025
   spawnLocked: 1
---- !u!114 &680844053449400690
+--- !u!114 &846575703986670780
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -23432,10 +23382,8 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
-  m_StartingHoverFilters:
-  - {fileID: 1866990116562210382}
-  m_StartingSelectFilters:
-  - {fileID: 1866990116562210382}
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
@@ -24324,12 +24272,11 @@ GameObject:
   - component: {fileID: 4350481743016888887}
   - component: {fileID: 2824917125335027445}
   - component: {fileID: 3710855976934975027}
-  - component: {fileID: 1878748708450985710}
-  - component: {fileID: 5869390288107184463}
-  - component: {fileID: 9199836288806615313}
-  - component: {fileID: 4778176156653836991}
-  - component: {fileID: 8683751988630970548}
-  - component: {fileID: 2918562374718354489}
+  - component: {fileID: 6830046510097926214}
+  - component: {fileID: 2949970311214671512}
+  - component: {fileID: 5053221724494990424}
+  - component: {fileID: 587382106419947923}
+  - component: {fileID: 3117706271658521897}
   m_Layer: 0
   m_Name: SelectProgramButton
   m_TagString: Untagged
@@ -24466,25 +24413,7 @@ MonoBehaviour:
   m_ClampToMaxDistance: 1
   m_MaxDistance: 0.0008
   m_PokeFilter: {fileID: 2824917125335027445}
---- !u!114 &1878748708450985710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6049014945867133776}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86d9f7cde916c034aafaa5d46029ca4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.94509804, g: 1, b: 0, a: 1}
-  outlineWidth: 8
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!114 &5869390288107184463
+--- !u!114 &6830046510097926214
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -24496,16 +24425,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 3526719451
+  GlobalObjectIdHash: 4001510864
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0
   SceneMigrationSynchronization: 1
   SpawnWithObservers: 1
-  DontDestroyWithOwner: 1
-  AutoObjectParentSync: 0
---- !u!114 &9199836288806615313
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!114 &2949970311214671512
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -24517,16 +24446,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25f7d6f3d19b0524d9be4bc50efbc19a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseUnreliableDeltas: 0
+  UseUnreliableDeltas: 1
   SyncPositionX: 1
   SyncPositionY: 1
   SyncPositionZ: 1
-  SyncRotAngleX: 0
-  SyncRotAngleY: 0
-  SyncRotAngleZ: 0
-  SyncScaleX: 0
-  SyncScaleY: 0
-  SyncScaleZ: 0
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 1
+  SyncScaleY: 1
+  SyncScaleZ: 1
   PositionThreshold: 0.001
   RotAngleThreshold: 0.01
   ScaleThreshold: 0.01
@@ -24536,7 +24465,7 @@ MonoBehaviour:
   InLocalSpace: 0
   Interpolate: 1
   SlerpPosition: 0
---- !u!54 &4778176156653836991
+--- !u!54 &5053221724494990424
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -24563,7 +24492,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8683751988630970548
+--- !u!114 &587382106419947923
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -24601,7 +24530,7 @@ MonoBehaviour:
   SelectNetworkedEventAll:
     m_PersistentCalls:
       m_Calls: []
-  m_SyncActivate: 0
+  m_SyncActivate: 1
   m_UseActivateEvents: 0
   ActivateNetworkedEventServer:
     m_PersistentCalls:
@@ -24613,7 +24542,7 @@ MonoBehaviour:
   m_AllowCollisionOwnershipExchange: 1
   m_MinExchangeVelocityMagitude: 0.025
   spawnLocked: 1
---- !u!114 &2918562374718354489
+--- !u!114 &3117706271658521897
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -25177,8 +25106,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6232484330096791838}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0000030665776, y: 64.57891, z: 0.000008433081}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.3112875e-13, y: 64.57891, z: 0.0000122663005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -25676,12 +25605,11 @@ GameObject:
   - component: {fileID: 6399218736583488633}
   - component: {fileID: 2103483880374062678}
   - component: {fileID: 7217715553889627150}
-  - component: {fileID: 781407556746635131}
-  - component: {fileID: 3679090725207332210}
-  - component: {fileID: 6474764555588685397}
-  - component: {fileID: 4770864734492042663}
-  - component: {fileID: 6705960740766183124}
-  - component: {fileID: 2265062871930693830}
+  - component: {fileID: 4756810408934608593}
+  - component: {fileID: 3928350085534210070}
+  - component: {fileID: 4023849178124816047}
+  - component: {fileID: 1088913129258292645}
+  - component: {fileID: 5711676158455159173}
   m_Layer: 0
   m_Name: ResetButton
   m_TagString: Untagged
@@ -25818,25 +25746,7 @@ MonoBehaviour:
   m_ClampToMaxDistance: 1
   m_MaxDistance: 0.0008
   m_PokeFilter: {fileID: 2103483880374062678}
---- !u!114 &781407556746635131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6375004821537028496}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86d9f7cde916c034aafaa5d46029ca4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.94509804, g: 1, b: 0, a: 1}
-  outlineWidth: 8
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!114 &3679090725207332210
+--- !u!114 &4756810408934608593
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -25848,16 +25758,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 3403027492
+  GlobalObjectIdHash: 243599626
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0
   SceneMigrationSynchronization: 1
   SpawnWithObservers: 1
-  DontDestroyWithOwner: 1
-  AutoObjectParentSync: 0
---- !u!114 &6474764555588685397
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!114 &3928350085534210070
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -25869,16 +25779,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25f7d6f3d19b0524d9be4bc50efbc19a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseUnreliableDeltas: 0
+  UseUnreliableDeltas: 1
   SyncPositionX: 1
   SyncPositionY: 1
   SyncPositionZ: 1
-  SyncRotAngleX: 0
-  SyncRotAngleY: 0
-  SyncRotAngleZ: 0
-  SyncScaleX: 0
-  SyncScaleY: 0
-  SyncScaleZ: 0
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 1
+  SyncScaleY: 1
+  SyncScaleZ: 1
   PositionThreshold: 0.001
   RotAngleThreshold: 0.01
   ScaleThreshold: 0.01
@@ -25888,7 +25798,7 @@ MonoBehaviour:
   InLocalSpace: 0
   Interpolate: 1
   SlerpPosition: 0
---- !u!54 &4770864734492042663
+--- !u!54 &4023849178124816047
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -25915,7 +25825,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6705960740766183124
+--- !u!114 &1088913129258292645
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -25953,7 +25863,7 @@ MonoBehaviour:
   SelectNetworkedEventAll:
     m_PersistentCalls:
       m_Calls: []
-  m_SyncActivate: 0
+  m_SyncActivate: 1
   m_UseActivateEvents: 0
   ActivateNetworkedEventServer:
     m_PersistentCalls:
@@ -25965,7 +25875,7 @@ MonoBehaviour:
   m_AllowCollisionOwnershipExchange: 1
   m_MinExchangeVelocityMagitude: 0.025
   spawnLocked: 1
---- !u!114 &2265062871930693830
+--- !u!114 &5711676158455159173
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -27554,12 +27464,11 @@ GameObject:
   - component: {fileID: 8896494644798182423}
   - component: {fileID: 6924710846947711449}
   - component: {fileID: 5922633415894917387}
-  - component: {fileID: 8497578826019449758}
-  - component: {fileID: 3395070973003052763}
-  - component: {fileID: 2773566411810674824}
-  - component: {fileID: 4867482051893363560}
-  - component: {fileID: 1153009933088355029}
-  - component: {fileID: 7329113640443766446}
+  - component: {fileID: 5983233186788950964}
+  - component: {fileID: 3582646937643054187}
+  - component: {fileID: 8067039937357996989}
+  - component: {fileID: 1019758999084543339}
+  - component: {fileID: 5792341755873167513}
   m_Layer: 0
   m_Name: MDIButton
   m_TagString: Untagged
@@ -27696,25 +27605,7 @@ MonoBehaviour:
   m_ClampToMaxDistance: 1
   m_MaxDistance: 0.0008
   m_PokeFilter: {fileID: 6924710846947711449}
---- !u!114 &8497578826019449758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6857604867363729798}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86d9f7cde916c034aafaa5d46029ca4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.94509804, g: 1, b: 0, a: 1}
-  outlineWidth: 8
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!114 &3395070973003052763
+--- !u!114 &5983233186788950964
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -27726,16 +27617,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 1500935758
+  GlobalObjectIdHash: 2523370966
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0
   SceneMigrationSynchronization: 1
   SpawnWithObservers: 1
-  DontDestroyWithOwner: 1
-  AutoObjectParentSync: 0
---- !u!114 &2773566411810674824
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!114 &3582646937643054187
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -27747,16 +27638,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25f7d6f3d19b0524d9be4bc50efbc19a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseUnreliableDeltas: 0
+  UseUnreliableDeltas: 1
   SyncPositionX: 1
   SyncPositionY: 1
   SyncPositionZ: 1
-  SyncRotAngleX: 0
-  SyncRotAngleY: 0
-  SyncRotAngleZ: 0
-  SyncScaleX: 0
-  SyncScaleY: 0
-  SyncScaleZ: 0
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 1
+  SyncScaleY: 1
+  SyncScaleZ: 1
   PositionThreshold: 0.001
   RotAngleThreshold: 0.01
   ScaleThreshold: 0.01
@@ -27766,7 +27657,7 @@ MonoBehaviour:
   InLocalSpace: 0
   Interpolate: 1
   SlerpPosition: 0
---- !u!54 &4867482051893363560
+--- !u!54 &8067039937357996989
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -27793,7 +27684,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1153009933088355029
+--- !u!114 &1019758999084543339
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -27831,7 +27722,7 @@ MonoBehaviour:
   SelectNetworkedEventAll:
     m_PersistentCalls:
       m_Calls: []
-  m_SyncActivate: 0
+  m_SyncActivate: 1
   m_UseActivateEvents: 0
   ActivateNetworkedEventServer:
     m_PersistentCalls:
@@ -27843,7 +27734,7 @@ MonoBehaviour:
   m_AllowCollisionOwnershipExchange: 1
   m_MinExchangeVelocityMagitude: 0.025
   spawnLocked: 1
---- !u!114 &7329113640443766446
+--- !u!114 &5792341755873167513
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -28188,12 +28079,11 @@ GameObject:
   - component: {fileID: 8093365674391482848}
   - component: {fileID: 8011372603287418083}
   - component: {fileID: 4421908002851101980}
-  - component: {fileID: 7256213773287786146}
-  - component: {fileID: 7410922463512846532}
-  - component: {fileID: 1368844155344241123}
-  - component: {fileID: 2348126667084671910}
-  - component: {fileID: 6322471538104656910}
-  - component: {fileID: 352621252906336920}
+  - component: {fileID: 523995307884103992}
+  - component: {fileID: 2935114261980240793}
+  - component: {fileID: 8879525369244340625}
+  - component: {fileID: 8924432270166110252}
+  - component: {fileID: 2094322894647960057}
   m_Layer: 0
   m_Name: AlterButton
   m_TagString: Untagged
@@ -28330,25 +28220,7 @@ MonoBehaviour:
   m_ClampToMaxDistance: 1
   m_MaxDistance: 0.0008
   m_PokeFilter: {fileID: 8011372603287418083}
---- !u!114 &7256213773287786146
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7011314981496388996}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86d9f7cde916c034aafaa5d46029ca4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.94509804, g: 1, b: 0, a: 1}
-  outlineWidth: 8
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!114 &7410922463512846532
+--- !u!114 &523995307884103992
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -28360,16 +28232,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 4051151870
+  GlobalObjectIdHash: 2754641221
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0
   SceneMigrationSynchronization: 1
   SpawnWithObservers: 1
-  DontDestroyWithOwner: 1
-  AutoObjectParentSync: 0
---- !u!114 &1368844155344241123
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!114 &2935114261980240793
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -28381,16 +28253,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25f7d6f3d19b0524d9be4bc50efbc19a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseUnreliableDeltas: 0
+  UseUnreliableDeltas: 1
   SyncPositionX: 1
   SyncPositionY: 1
   SyncPositionZ: 1
-  SyncRotAngleX: 0
-  SyncRotAngleY: 0
-  SyncRotAngleZ: 0
-  SyncScaleX: 0
-  SyncScaleY: 0
-  SyncScaleZ: 0
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 1
+  SyncScaleY: 1
+  SyncScaleZ: 1
   PositionThreshold: 0.001
   RotAngleThreshold: 0.01
   ScaleThreshold: 0.01
@@ -28400,7 +28272,7 @@ MonoBehaviour:
   InLocalSpace: 0
   Interpolate: 1
   SlerpPosition: 0
---- !u!54 &2348126667084671910
+--- !u!54 &8879525369244340625
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -28427,7 +28299,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6322471538104656910
+--- !u!114 &8924432270166110252
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -28465,7 +28337,7 @@ MonoBehaviour:
   SelectNetworkedEventAll:
     m_PersistentCalls:
       m_Calls: []
-  m_SyncActivate: 0
+  m_SyncActivate: 1
   m_UseActivateEvents: 0
   ActivateNetworkedEventServer:
     m_PersistentCalls:
@@ -28477,7 +28349,7 @@ MonoBehaviour:
   m_AllowCollisionOwnershipExchange: 1
   m_MinExchangeVelocityMagitude: 0.025
   spawnLocked: 1
---- !u!114 &352621252906336920
+--- !u!114 &2094322894647960057
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -29843,12 +29715,11 @@ GameObject:
   - component: {fileID: 6588024877378173762}
   - component: {fileID: 5491927869692920479}
   - component: {fileID: 8983632430290036517}
-  - component: {fileID: 7864822297667557556}
-  - component: {fileID: 1186125324509132289}
-  - component: {fileID: 8374797869840571725}
-  - component: {fileID: 448959370484220137}
-  - component: {fileID: 687789020596704560}
-  - component: {fileID: 16455467467296754}
+  - component: {fileID: 8842766727811985763}
+  - component: {fileID: 5182981317362512196}
+  - component: {fileID: 7969393686366320268}
+  - component: {fileID: 3273551389282419613}
+  - component: {fileID: 3013260668627283388}
   m_Layer: 0
   m_Name: CursorUpButton
   m_TagString: Untagged
@@ -29985,25 +29856,7 @@ MonoBehaviour:
   m_ClampToMaxDistance: 1
   m_MaxDistance: 0.0008
   m_PokeFilter: {fileID: 5491927869692920479}
---- !u!114 &7864822297667557556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7408423040894783256}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86d9f7cde916c034aafaa5d46029ca4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.94509804, g: 1, b: 0, a: 1}
-  outlineWidth: 8
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!114 &1186125324509132289
+--- !u!114 &8842766727811985763
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30015,16 +29868,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 2128166342
+  GlobalObjectIdHash: 3282655318
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0
   SceneMigrationSynchronization: 1
   SpawnWithObservers: 1
-  DontDestroyWithOwner: 1
-  AutoObjectParentSync: 0
---- !u!114 &8374797869840571725
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!114 &5182981317362512196
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30036,16 +29889,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25f7d6f3d19b0524d9be4bc50efbc19a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseUnreliableDeltas: 0
+  UseUnreliableDeltas: 1
   SyncPositionX: 1
   SyncPositionY: 1
   SyncPositionZ: 1
-  SyncRotAngleX: 0
-  SyncRotAngleY: 0
-  SyncRotAngleZ: 0
-  SyncScaleX: 0
-  SyncScaleY: 0
-  SyncScaleZ: 0
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 1
+  SyncScaleY: 1
+  SyncScaleZ: 1
   PositionThreshold: 0.001
   RotAngleThreshold: 0.01
   ScaleThreshold: 0.01
@@ -30055,7 +29908,7 @@ MonoBehaviour:
   InLocalSpace: 0
   Interpolate: 1
   SlerpPosition: 0
---- !u!54 &448959370484220137
+--- !u!54 &7969393686366320268
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30082,7 +29935,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &687789020596704560
+--- !u!114 &3273551389282419613
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30120,7 +29973,7 @@ MonoBehaviour:
   SelectNetworkedEventAll:
     m_PersistentCalls:
       m_Calls: []
-  m_SyncActivate: 0
+  m_SyncActivate: 1
   m_UseActivateEvents: 0
   ActivateNetworkedEventServer:
     m_PersistentCalls:
@@ -30132,7 +29985,7 @@ MonoBehaviour:
   m_AllowCollisionOwnershipExchange: 1
   m_MinExchangeVelocityMagitude: 0.025
   spawnLocked: 1
---- !u!114 &16455467467296754
+--- !u!114 &3013260668627283388
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30657,12 +30510,11 @@ GameObject:
   - component: {fileID: 4329968428672772872}
   - component: {fileID: 2480375143879432461}
   - component: {fileID: 4984569591866484260}
-  - component: {fileID: 3153926548345235256}
-  - component: {fileID: 7457888681618040026}
-  - component: {fileID: 8000610529931983039}
-  - component: {fileID: 2077155392853111981}
-  - component: {fileID: 6852982224011013758}
-  - component: {fileID: 8679420278448284306}
+  - component: {fileID: 4635687885618517687}
+  - component: {fileID: 5423477314406004643}
+  - component: {fileID: 2169755861493596719}
+  - component: {fileID: 2807404467518631471}
+  - component: {fileID: 5874929350931965371}
   m_Layer: 0
   m_Name: 0Button
   m_TagString: Untagged
@@ -30799,25 +30651,7 @@ MonoBehaviour:
   m_ClampToMaxDistance: 1
   m_MaxDistance: 0.0008
   m_PokeFilter: {fileID: 2480375143879432461}
---- !u!114 &3153926548345235256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7458115449179287867}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86d9f7cde916c034aafaa5d46029ca4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.94509804, g: 1, b: 0, a: 1}
-  outlineWidth: 8
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!114 &7457888681618040026
+--- !u!114 &4635687885618517687
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30829,16 +30663,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 2781338519
+  GlobalObjectIdHash: 2206988574
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0
   SceneMigrationSynchronization: 1
   SpawnWithObservers: 1
-  DontDestroyWithOwner: 1
-  AutoObjectParentSync: 0
---- !u!114 &8000610529931983039
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!114 &5423477314406004643
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30850,16 +30684,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25f7d6f3d19b0524d9be4bc50efbc19a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseUnreliableDeltas: 0
+  UseUnreliableDeltas: 1
   SyncPositionX: 1
   SyncPositionY: 1
   SyncPositionZ: 1
-  SyncRotAngleX: 0
-  SyncRotAngleY: 0
-  SyncRotAngleZ: 0
-  SyncScaleX: 0
-  SyncScaleY: 0
-  SyncScaleZ: 0
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 1
+  SyncScaleY: 1
+  SyncScaleZ: 1
   PositionThreshold: 0.001
   RotAngleThreshold: 0.01
   ScaleThreshold: 0.01
@@ -30869,7 +30703,7 @@ MonoBehaviour:
   InLocalSpace: 0
   Interpolate: 1
   SlerpPosition: 0
---- !u!54 &2077155392853111981
+--- !u!54 &2169755861493596719
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30896,7 +30730,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6852982224011013758
+--- !u!114 &2807404467518631471
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30934,7 +30768,7 @@ MonoBehaviour:
   SelectNetworkedEventAll:
     m_PersistentCalls:
       m_Calls: []
-  m_SyncActivate: 0
+  m_SyncActivate: 1
   m_UseActivateEvents: 0
   ActivateNetworkedEventServer:
     m_PersistentCalls:
@@ -30946,7 +30780,7 @@ MonoBehaviour:
   m_AllowCollisionOwnershipExchange: 1
   m_MinExchangeVelocityMagitude: 0.025
   spawnLocked: 1
---- !u!114 &8679420278448284306
+--- !u!114 &5874929350931965371
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -31680,12 +31514,11 @@ GameObject:
   - component: {fileID: 4381827532450446201}
   - component: {fileID: 1446820033535312851}
   - component: {fileID: 8017918232327477060}
-  - component: {fileID: 8771280311185119239}
-  - component: {fileID: 3617150539975512360}
-  - component: {fileID: 3166455353932586111}
-  - component: {fileID: 8750349011896993159}
-  - component: {fileID: 9069717890722283263}
-  - component: {fileID: 8968907673568008847}
+  - component: {fileID: 4322068595065038491}
+  - component: {fileID: 3977719758595953113}
+  - component: {fileID: 5197609386415158355}
+  - component: {fileID: 5477406715896712419}
+  - component: {fileID: 8306911726299334242}
   m_Layer: 0
   m_Name: CycleStartButton
   m_TagString: Untagged
@@ -31822,25 +31655,7 @@ MonoBehaviour:
   m_ClampToMaxDistance: 1
   m_MaxDistance: 0.1
   m_PokeFilter: {fileID: 1446820033535312851}
---- !u!114 &8771280311185119239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7658999218996197853}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86d9f7cde916c034aafaa5d46029ca4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.94509804, g: 1, b: 0, a: 1}
-  outlineWidth: 8
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!114 &3617150539975512360
+--- !u!114 &4322068595065038491
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -31852,16 +31667,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 4228109814
+  GlobalObjectIdHash: 1533226096
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0
   SceneMigrationSynchronization: 1
   SpawnWithObservers: 1
-  DontDestroyWithOwner: 1
-  AutoObjectParentSync: 0
---- !u!114 &3166455353932586111
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!114 &3977719758595953113
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -31873,16 +31688,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25f7d6f3d19b0524d9be4bc50efbc19a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseUnreliableDeltas: 0
+  UseUnreliableDeltas: 1
   SyncPositionX: 1
   SyncPositionY: 1
   SyncPositionZ: 1
-  SyncRotAngleX: 0
-  SyncRotAngleY: 0
-  SyncRotAngleZ: 0
-  SyncScaleX: 0
-  SyncScaleY: 0
-  SyncScaleZ: 0
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 1
+  SyncScaleY: 1
+  SyncScaleZ: 1
   PositionThreshold: 0.001
   RotAngleThreshold: 0.01
   ScaleThreshold: 0.01
@@ -31892,7 +31707,7 @@ MonoBehaviour:
   InLocalSpace: 0
   Interpolate: 1
   SlerpPosition: 0
---- !u!54 &8750349011896993159
+--- !u!54 &5197609386415158355
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -31919,7 +31734,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &9069717890722283263
+--- !u!114 &5477406715896712419
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -31957,7 +31772,7 @@ MonoBehaviour:
   SelectNetworkedEventAll:
     m_PersistentCalls:
       m_Calls: []
-  m_SyncActivate: 0
+  m_SyncActivate: 1
   m_UseActivateEvents: 0
   ActivateNetworkedEventServer:
     m_PersistentCalls:
@@ -31969,7 +31784,7 @@ MonoBehaviour:
   m_AllowCollisionOwnershipExchange: 1
   m_MinExchangeVelocityMagitude: 0.025
   spawnLocked: 1
---- !u!114 &8968907673568008847
+--- !u!114 &8306911726299334242
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -32447,12 +32262,11 @@ GameObject:
   - component: {fileID: 2643270123386549672}
   - component: {fileID: 1393824147524381581}
   - component: {fileID: 4228916438308926739}
-  - component: {fileID: 7462892616380799799}
-  - component: {fileID: 4077321713436710745}
-  - component: {fileID: 7830029947410560389}
-  - component: {fileID: 6678108559289793688}
-  - component: {fileID: 4886785078263012160}
-  - component: {fileID: 1930816928478530981}
+  - component: {fileID: 963599170908258219}
+  - component: {fileID: 6659700491144661660}
+  - component: {fileID: 1380273788023351258}
+  - component: {fileID: 5163425981617518097}
+  - component: {fileID: 7809545005506182511}
   m_Layer: 0
   m_Name: TButton
   m_TagString: Untagged
@@ -32589,25 +32403,7 @@ MonoBehaviour:
   m_ClampToMaxDistance: 1
   m_MaxDistance: 0.0008
   m_PokeFilter: {fileID: 1393824147524381581}
---- !u!114 &7462892616380799799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7829995280854463876}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86d9f7cde916c034aafaa5d46029ca4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.94509804, g: 1, b: 0, a: 1}
-  outlineWidth: 8
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!114 &4077321713436710745
+--- !u!114 &963599170908258219
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -32619,16 +32415,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 1973834662
+  GlobalObjectIdHash: 882596194
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0
   SceneMigrationSynchronization: 1
   SpawnWithObservers: 1
-  DontDestroyWithOwner: 1
-  AutoObjectParentSync: 0
---- !u!114 &7830029947410560389
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!114 &6659700491144661660
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -32640,16 +32436,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25f7d6f3d19b0524d9be4bc50efbc19a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseUnreliableDeltas: 0
+  UseUnreliableDeltas: 1
   SyncPositionX: 1
   SyncPositionY: 1
   SyncPositionZ: 1
-  SyncRotAngleX: 0
-  SyncRotAngleY: 0
-  SyncRotAngleZ: 0
-  SyncScaleX: 0
-  SyncScaleY: 0
-  SyncScaleZ: 0
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 1
+  SyncScaleY: 1
+  SyncScaleZ: 1
   PositionThreshold: 0.001
   RotAngleThreshold: 0.01
   ScaleThreshold: 0.01
@@ -32659,7 +32455,7 @@ MonoBehaviour:
   InLocalSpace: 0
   Interpolate: 1
   SlerpPosition: 0
---- !u!54 &6678108559289793688
+--- !u!54 &1380273788023351258
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -32686,7 +32482,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &4886785078263012160
+--- !u!114 &5163425981617518097
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -32724,7 +32520,7 @@ MonoBehaviour:
   SelectNetworkedEventAll:
     m_PersistentCalls:
       m_Calls: []
-  m_SyncActivate: 0
+  m_SyncActivate: 1
   m_UseActivateEvents: 0
   ActivateNetworkedEventServer:
     m_PersistentCalls:
@@ -32736,7 +32532,7 @@ MonoBehaviour:
   m_AllowCollisionOwnershipExchange: 1
   m_MinExchangeVelocityMagitude: 0.025
   spawnLocked: 1
---- !u!114 &1930816928478530981
+--- !u!114 &7809545005506182511
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -33496,12 +33292,11 @@ GameObject:
   - component: {fileID: 5211316202862100907}
   - component: {fileID: 8581841298227417896}
   - component: {fileID: 7571708458851749930}
-  - component: {fileID: 4151486893090015581}
-  - component: {fileID: 150707450658751436}
-  - component: {fileID: 3404740572911497272}
-  - component: {fileID: 4056476914966383809}
-  - component: {fileID: 3153302487865674658}
-  - component: {fileID: 425230173453175818}
+  - component: {fileID: 4037709185708500351}
+  - component: {fileID: 4757087916202450007}
+  - component: {fileID: 928428898155784855}
+  - component: {fileID: 1709248502556684465}
+  - component: {fileID: 2032850597980962586}
   m_Layer: 0
   m_Name: CursorDownButton
   m_TagString: Untagged
@@ -33638,25 +33433,7 @@ MonoBehaviour:
   m_ClampToMaxDistance: 1
   m_MaxDistance: 0.0008
   m_PokeFilter: {fileID: 8581841298227417896}
---- !u!114 &4151486893090015581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8151898811139501140}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86d9f7cde916c034aafaa5d46029ca4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.94509804, g: 1, b: 0, a: 1}
-  outlineWidth: 8
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!114 &150707450658751436
+--- !u!114 &4037709185708500351
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -33668,16 +33445,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 1362246468
+  GlobalObjectIdHash: 2955408293
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0
   SceneMigrationSynchronization: 1
   SpawnWithObservers: 1
-  DontDestroyWithOwner: 1
-  AutoObjectParentSync: 0
---- !u!114 &3404740572911497272
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!114 &4757087916202450007
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -33689,16 +33466,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25f7d6f3d19b0524d9be4bc50efbc19a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseUnreliableDeltas: 0
+  UseUnreliableDeltas: 1
   SyncPositionX: 1
   SyncPositionY: 1
   SyncPositionZ: 1
-  SyncRotAngleX: 0
-  SyncRotAngleY: 0
-  SyncRotAngleZ: 0
-  SyncScaleX: 0
-  SyncScaleY: 0
-  SyncScaleZ: 0
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 1
+  SyncScaleY: 1
+  SyncScaleZ: 1
   PositionThreshold: 0.001
   RotAngleThreshold: 0.01
   ScaleThreshold: 0.01
@@ -33708,7 +33485,7 @@ MonoBehaviour:
   InLocalSpace: 0
   Interpolate: 1
   SlerpPosition: 0
---- !u!54 &4056476914966383809
+--- !u!54 &928428898155784855
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -33735,7 +33512,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3153302487865674658
+--- !u!114 &1709248502556684465
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -33773,7 +33550,7 @@ MonoBehaviour:
   SelectNetworkedEventAll:
     m_PersistentCalls:
       m_Calls: []
-  m_SyncActivate: 0
+  m_SyncActivate: 1
   m_UseActivateEvents: 0
   ActivateNetworkedEventServer:
     m_PersistentCalls:
@@ -33785,7 +33562,7 @@ MonoBehaviour:
   m_AllowCollisionOwnershipExchange: 1
   m_MinExchangeVelocityMagitude: 0.025
   spawnLocked: 1
---- !u!114 &425230173453175818
+--- !u!114 &2032850597980962586
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -33808,6 +33585,8 @@ GameObject:
   - component: {fileID: 6823032424009448940}
   - component: {fileID: 7708457006348881723}
   - component: {fileID: 115331773335671073}
+  - component: {fileID: 3022393264343100920}
+  - component: {fileID: 8220730042127430353}
   m_Layer: 0
   m_Name: RightDoorOpen
   m_TagString: Untagged
@@ -33882,6 +33661,58 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3022393264343100920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8177959238828412685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 3741290971
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 1
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!114 &8220730042127430353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8177959238828412685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25f7d6f3d19b0524d9be4bc50efbc19a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseUnreliableDeltas: 1
+  SyncPositionX: 1
+  SyncPositionY: 1
+  SyncPositionZ: 1
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 1
+  SyncScaleY: 1
+  SyncScaleZ: 1
+  PositionThreshold: 0.001
+  RotAngleThreshold: 0.01
+  ScaleThreshold: 0.01
+  UseQuaternionSynchronization: 1
+  UseQuaternionCompression: 1
+  UseHalfFloatPrecision: 0
+  InLocalSpace: 0
+  Interpolate: 1
+  SlerpPosition: 0
 --- !u!1 &8225320422263296532
 GameObject:
   m_ObjectHideFlags: 0
@@ -34842,12 +34673,11 @@ GameObject:
   - component: {fileID: 1855830794244569019}
   - component: {fileID: 5455110362347896511}
   - component: {fileID: 5656321282683481127}
-  - component: {fileID: 2127731832685532253}
-  - component: {fileID: 7377008254247523534}
-  - component: {fileID: 6704472634347455688}
-  - component: {fileID: 419197815711132213}
-  - component: {fileID: 5222799293523001283}
-  - component: {fileID: 5902203987786268700}
+  - component: {fileID: 6850455316020658539}
+  - component: {fileID: 7263366345396337367}
+  - component: {fileID: 1730983624147400797}
+  - component: {fileID: 6653637181425047580}
+  - component: {fileID: 2492887934768910400}
   m_Layer: 0
   m_Name: 1Button
   m_TagString: Untagged
@@ -34984,25 +34814,7 @@ MonoBehaviour:
   m_ClampToMaxDistance: 1
   m_MaxDistance: 0.0008
   m_PokeFilter: {fileID: 5455110362347896511}
---- !u!114 &2127731832685532253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8434289923610926062}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86d9f7cde916c034aafaa5d46029ca4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.9427508, g: 1, b: 0, a: 1}
-  outlineWidth: 8
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!114 &7377008254247523534
+--- !u!114 &6850455316020658539
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -35014,16 +34826,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 2485032831
+  GlobalObjectIdHash: 295226931
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0
   SceneMigrationSynchronization: 1
   SpawnWithObservers: 1
-  DontDestroyWithOwner: 1
-  AutoObjectParentSync: 0
---- !u!114 &6704472634347455688
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!114 &7263366345396337367
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -35035,16 +34847,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25f7d6f3d19b0524d9be4bc50efbc19a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseUnreliableDeltas: 0
+  UseUnreliableDeltas: 1
   SyncPositionX: 1
   SyncPositionY: 1
   SyncPositionZ: 1
-  SyncRotAngleX: 0
-  SyncRotAngleY: 0
-  SyncRotAngleZ: 0
-  SyncScaleX: 0
-  SyncScaleY: 0
-  SyncScaleZ: 0
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 1
+  SyncScaleY: 1
+  SyncScaleZ: 1
   PositionThreshold: 0.001
   RotAngleThreshold: 0.01
   ScaleThreshold: 0.01
@@ -35054,7 +34866,7 @@ MonoBehaviour:
   InLocalSpace: 0
   Interpolate: 1
   SlerpPosition: 0
---- !u!54 &419197815711132213
+--- !u!54 &1730983624147400797
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -35081,7 +34893,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &5222799293523001283
+--- !u!114 &6653637181425047580
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -35119,7 +34931,7 @@ MonoBehaviour:
   SelectNetworkedEventAll:
     m_PersistentCalls:
       m_Calls: []
-  m_SyncActivate: 0
+  m_SyncActivate: 1
   m_UseActivateEvents: 0
   ActivateNetworkedEventServer:
     m_PersistentCalls:
@@ -35131,7 +34943,7 @@ MonoBehaviour:
   m_AllowCollisionOwnershipExchange: 1
   m_MinExchangeVelocityMagitude: 0.025
   spawnLocked: 1
---- !u!114 &5902203987786268700
+--- !u!114 &2492887934768910400
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -36572,12 +36384,11 @@ GameObject:
   - component: {fileID: 7704905659865053624}
   - component: {fileID: 6885031722926875454}
   - component: {fileID: 2314884875530213570}
-  - component: {fileID: 3895236350961266430}
-  - component: {fileID: 7810176942382108589}
-  - component: {fileID: 6233190651016978004}
-  - component: {fileID: 7981022560001101953}
-  - component: {fileID: 3774019860111714516}
-  - component: {fileID: 6382305354010396383}
+  - component: {fileID: 5674444918864399248}
+  - component: {fileID: 2166974068341015743}
+  - component: {fileID: 3428305473592468867}
+  - component: {fileID: 289205469024705556}
+  - component: {fileID: 3584314644347587876}
   m_Layer: 0
   m_Name: StartButton
   m_TagString: Untagged
@@ -36593,10 +36404,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8740959354873310763}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -1.501, y: 0.739, z: 0.145}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -0.6749207, y: 0.7391, z: 0.14533377}
   m_LocalScale: {x: 0.01943687, y: 0.013189304, z: 0.019436877}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1251862343553520928}
   m_Father: {fileID: 2047436013478560604}
@@ -36727,7 +36538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Task: {fileID: 0}
-  m_ScreenController: {fileID: 7225912926763162554}
+  m_ScreenController: {fileID: 2261401069588783381}
   OnPress:
     m_PersistentCalls:
       m_Calls:
@@ -36755,37 +36566,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3895236350961266430}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 4
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &3895236350961266430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8740959354873310763}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86d9f7cde916c034aafaa5d46029ca4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.94509804, g: 1, b: 0, a: 1}
-  outlineWidth: 8
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!114 &7810176942382108589
+--- !u!114 &5674444918864399248
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -36797,16 +36578,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 4178159163
+  GlobalObjectIdHash: 1543981724
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0
   SceneMigrationSynchronization: 1
   SpawnWithObservers: 1
-  DontDestroyWithOwner: 1
-  AutoObjectParentSync: 0
---- !u!114 &6233190651016978004
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!114 &2166974068341015743
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -36818,7 +36599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25f7d6f3d19b0524d9be4bc50efbc19a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseUnreliableDeltas: 0
+  UseUnreliableDeltas: 1
   SyncPositionX: 1
   SyncPositionY: 1
   SyncPositionZ: 1
@@ -36837,7 +36618,7 @@ MonoBehaviour:
   InLocalSpace: 0
   Interpolate: 1
   SlerpPosition: 0
---- !u!54 &7981022560001101953
+--- !u!54 &3428305473592468867
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -36864,7 +36645,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3774019860111714516
+--- !u!114 &289205469024705556
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -36902,7 +36683,7 @@ MonoBehaviour:
   SelectNetworkedEventAll:
     m_PersistentCalls:
       m_Calls: []
-  m_SyncActivate: 0
+  m_SyncActivate: 1
   m_UseActivateEvents: 0
   ActivateNetworkedEventServer:
     m_PersistentCalls:
@@ -36914,7 +36695,7 @@ MonoBehaviour:
   m_AllowCollisionOwnershipExchange: 1
   m_MinExchangeVelocityMagitude: 0.025
   spawnLocked: 1
---- !u!114 &6382305354010396383
+--- !u!114 &3584314644347587876
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37223,12 +37004,11 @@ GameObject:
   - component: {fileID: 6824278977942946873}
   - component: {fileID: 1141084969381392981}
   - component: {fileID: 1864723010778946043}
-  - component: {fileID: 8473990906309377129}
-  - component: {fileID: 2082412839159227310}
-  - component: {fileID: 6861069895500772998}
-  - component: {fileID: 7370767360233504787}
-  - component: {fileID: 7915710153687096489}
-  - component: {fileID: 2777391913380693706}
+  - component: {fileID: 241863212923973299}
+  - component: {fileID: 4996249540797338959}
+  - component: {fileID: 2974441943253270621}
+  - component: {fileID: 6697766253429165399}
+  - component: {fileID: 5175689544460774968}
   m_Layer: 0
   m_Name: ListProgramButton
   m_TagString: Untagged
@@ -37365,25 +37145,7 @@ MonoBehaviour:
   m_ClampToMaxDistance: 1
   m_MaxDistance: 0.0008
   m_PokeFilter: {fileID: 1141084969381392981}
---- !u!114 &8473990906309377129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8909178904050390177}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86d9f7cde916c034aafaa5d46029ca4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.94509804, g: 1, b: 0, a: 1}
-  outlineWidth: 8
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!114 &2082412839159227310
+--- !u!114 &241863212923973299
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37395,16 +37157,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 3875119283
+  GlobalObjectIdHash: 1115110863
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0
   SceneMigrationSynchronization: 1
   SpawnWithObservers: 1
-  DontDestroyWithOwner: 1
-  AutoObjectParentSync: 0
---- !u!114 &6861069895500772998
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!114 &4996249540797338959
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37416,16 +37178,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25f7d6f3d19b0524d9be4bc50efbc19a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseUnreliableDeltas: 0
+  UseUnreliableDeltas: 1
   SyncPositionX: 1
   SyncPositionY: 1
   SyncPositionZ: 1
-  SyncRotAngleX: 0
-  SyncRotAngleY: 0
-  SyncRotAngleZ: 0
-  SyncScaleX: 0
-  SyncScaleY: 0
-  SyncScaleZ: 0
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 1
+  SyncScaleY: 1
+  SyncScaleZ: 1
   PositionThreshold: 0.001
   RotAngleThreshold: 0.01
   ScaleThreshold: 0.01
@@ -37435,7 +37197,7 @@ MonoBehaviour:
   InLocalSpace: 0
   Interpolate: 1
   SlerpPosition: 0
---- !u!54 &7370767360233504787
+--- !u!54 &2974441943253270621
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37462,7 +37224,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7915710153687096489
+--- !u!114 &6697766253429165399
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37500,7 +37262,7 @@ MonoBehaviour:
   SelectNetworkedEventAll:
     m_PersistentCalls:
       m_Calls: []
-  m_SyncActivate: 0
+  m_SyncActivate: 1
   m_UseActivateEvents: 0
   ActivateNetworkedEventServer:
     m_PersistentCalls:
@@ -37512,7 +37274,7 @@ MonoBehaviour:
   m_AllowCollisionOwnershipExchange: 1
   m_MinExchangeVelocityMagitude: 0.025
   spawnLocked: 1
---- !u!114 &2777391913380693706
+--- !u!114 &5175689544460774968
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37785,12 +37547,11 @@ GameObject:
   - component: {fileID: 6768360967600424908}
   - component: {fileID: 8203563623809362964}
   - component: {fileID: 7266897507329589431}
-  - component: {fileID: 5273173352607358852}
-  - component: {fileID: 4798921348777962464}
-  - component: {fileID: 5164104545195840471}
-  - component: {fileID: 8735313861562955552}
-  - component: {fileID: 8795769200828457009}
-  - component: {fileID: 1340609693421793815}
+  - component: {fileID: 8191842488661357692}
+  - component: {fileID: 2088276993535668378}
+  - component: {fileID: 242659170025501305}
+  - component: {fileID: 8828485263729258488}
+  - component: {fileID: 161636047047678628}
   m_Layer: 0
   m_Name: CursorRightButton
   m_TagString: Untagged
@@ -37927,25 +37688,7 @@ MonoBehaviour:
   m_ClampToMaxDistance: 1
   m_MaxDistance: 0.0008
   m_PokeFilter: {fileID: 8203563623809362964}
---- !u!114 &5273173352607358852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8983592811232985874}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86d9f7cde916c034aafaa5d46029ca4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.94509804, g: 1, b: 0, a: 1}
-  outlineWidth: 8
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!114 &4798921348777962464
+--- !u!114 &8191842488661357692
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37957,16 +37700,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 2044381931
+  GlobalObjectIdHash: 1762735900
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0
   SceneMigrationSynchronization: 1
   SpawnWithObservers: 1
-  DontDestroyWithOwner: 1
-  AutoObjectParentSync: 0
---- !u!114 &5164104545195840471
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!114 &2088276993535668378
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37978,16 +37721,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25f7d6f3d19b0524d9be4bc50efbc19a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseUnreliableDeltas: 0
+  UseUnreliableDeltas: 1
   SyncPositionX: 1
   SyncPositionY: 1
   SyncPositionZ: 1
-  SyncRotAngleX: 0
-  SyncRotAngleY: 0
-  SyncRotAngleZ: 0
-  SyncScaleX: 0
-  SyncScaleY: 0
-  SyncScaleZ: 0
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 1
+  SyncScaleY: 1
+  SyncScaleZ: 1
   PositionThreshold: 0.001
   RotAngleThreshold: 0.01
   ScaleThreshold: 0.01
@@ -37997,7 +37740,7 @@ MonoBehaviour:
   InLocalSpace: 0
   Interpolate: 1
   SlerpPosition: 0
---- !u!54 &8735313861562955552
+--- !u!54 &242659170025501305
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -38024,7 +37767,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8795769200828457009
+--- !u!114 &8828485263729258488
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -38062,7 +37805,7 @@ MonoBehaviour:
   SelectNetworkedEventAll:
     m_PersistentCalls:
       m_Calls: []
-  m_SyncActivate: 0
+  m_SyncActivate: 1
   m_UseActivateEvents: 0
   ActivateNetworkedEventServer:
     m_PersistentCalls:
@@ -38074,7 +37817,7 @@ MonoBehaviour:
   m_AllowCollisionOwnershipExchange: 1
   m_MinExchangeVelocityMagitude: 0.025
   spawnLocked: 1
---- !u!114 &1340609693421793815
+--- !u!114 &161636047047678628
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

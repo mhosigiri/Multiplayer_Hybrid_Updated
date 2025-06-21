@@ -220,7 +220,10 @@ namespace XRMultiplayer
             // Disable the network transform to allow smooth interaction with high latency and wait for ownership or timeout to re-enable.
             if (CanHold() & !IsOwner)
             {
-                m_ClientNetworkTransform.enabled = false;
+                if (((XRGrabInteractable)baseInteractable).movementType == XRBaseInteractable.MovementType.VelocityTracking || ((XRGrabInteractable)baseInteractable).throwOnDetach)
+                {
+                    m_Rigidbody.isKinematic = false;
+                }
             }
         }
 
