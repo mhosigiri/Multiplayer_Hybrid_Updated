@@ -15,7 +15,7 @@ A small Unity project that explores simple multiplayer behavior. It is meant to 
 * Git installed
 
 Tip  
-The exact Unity version is recorded in ProjectSettings ProjectVersion.txt. Open the file to confirm before you upgrade or downgrade the Editor. :contentReference[oaicite:0]{index=0}
+The exact Unity version is recorded in ProjectSettings ProjectVersion.txt. Open the file to confirm before you upgrade or downgrade the Editor.
 
 ## Get started
 
@@ -44,7 +44,7 @@ Packages
 ProjectSettings
 
 
-These folders are present in the repository. :contentReference[oaicite:1]{index=1}
+These folders are present in the repository.
 
 ## Notes
 
